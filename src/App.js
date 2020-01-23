@@ -7,7 +7,13 @@ function App() {
   const [sum, setSum] = useState('');
 
   const handleClick = e => {
-    setSum(sum + e.target.value);
+    switch (e) {
+      case '.':
+        setSum(sum + e.target.value);
+        break;
+      default:
+        setSum(sum + e.target.value);
+    }
   };
 
   const handleEquals = () => {
@@ -16,7 +22,7 @@ function App() {
   };
 
   const handleClear = () => {
-    setSum('');
+    setSum('0');
   };
 
   return (

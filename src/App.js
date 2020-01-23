@@ -23,9 +23,7 @@ function App() {
     <>
       <div className="container">
         <form className="calculator">
-          <div>
-            <Display sum={sum} />
-          </div>
+          <Display sum={sum} />
           <Buttons
             handleClick={handleClick}
             handleClear={handleClear}

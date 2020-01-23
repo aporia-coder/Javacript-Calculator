@@ -16,7 +16,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   }
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="-"
       id="subtract"
@@ -26,7 +26,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="+"
       id="add"
@@ -36,7 +36,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="*"
       id="multiply"
@@ -46,7 +46,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="="
       id="equals"
@@ -56,7 +56,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round-red"
+      className="number-red"
       type="button"
       value="AC"
       id="clear"
@@ -66,7 +66,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="."
       id="decimal"
@@ -76,7 +76,7 @@ const Buttons = ({ handleClick, handleEquals, handleClear }) => {
   );
   numbers.push(
     <input
-      className="number-round"
+      className="number"
       type="button"
       value="/"
       id="divide"

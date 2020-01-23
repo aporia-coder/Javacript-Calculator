@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff867a), color-stop(21%, #ff8c7f), color-stop(52%, #f99185), color-stop(78%, #cf556c), to(#b12a5b));
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #4763e2 0%, #5b2591 100%);
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
+  grid-gap: 10px 10px;
+}
+
+.number, .number-round, .number-round-red {
+  padding: 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+}
+
+.number-round, .number-round-red {
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+
+.number-round-red {
+  color: red;
+  background-color: white;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */

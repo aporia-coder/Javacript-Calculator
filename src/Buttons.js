@@ -1,0 +1,90 @@
+import React from 'react';
+
+const Buttons = ({ handleClick, handleEquals, handleClear }) => {
+  const numbers = [];
+  for (let i = 0; i < 10; i++) {
+    numbers.push(
+      <input
+        className="number"
+        type="button"
+        value={i}
+        id={i}
+        onClick={handleClick}
+        key={i}
+      />
+    );
+  }
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="-"
+      id="subtract"
+      onClick={handleClick}
+      key="-"
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="+"
+      id="add"
+      onClick={handleClick}
+      key="+"
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="*"
+      id="multiply"
+      onClick={handleClick}
+      key="*"
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="="
+      id="equals"
+      onClick={handleEquals}
+      key="="
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round-red"
+      type="button"
+      value="AC"
+      id="clear"
+      onClick={handleClear}
+      key="clear"
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="."
+      id="decimal"
+      onClick={handleClick}
+      key="decimal"
+    />
+  );
+  numbers.push(
+    <input
+      className="number-round"
+      type="button"
+      value="/"
+      id="divide"
+      onClick={handleClick}
+      key="divide"
+    />
+  );
+  return numbers;
+};
+
+export default Buttons;
